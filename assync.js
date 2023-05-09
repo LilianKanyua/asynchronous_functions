@@ -33,8 +33,8 @@ displayMessage("Welcome dear customer");
 let userIds=[101,102,103,104,105]
 
   async function getUserData(){
-      for(id in userIds){
-          let userData = await userData(id)
+      for(id of userIds){
+          let userData = await userIds(id)
           console.log(userData)
       }
   }
